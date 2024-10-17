@@ -1,0 +1,91 @@
+/* src/styles/App.css */
+
+/* Common styles for the app */
+.App {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .theme-buttons {
+    margin-top: 20px;
+  }
+  
+  .theme-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  
+  .theme-dropdown {
+    margin-top: 20px;
+  }
+  
+  .dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Light Mode */
+  .App.light {
+    background-color: #F9FAFB; /* Light Grey */
+    color: #2C3E50; /* Standard Dark Blue */
+  }
+  
+  .App.light p {
+    color: #E74C3C; /* Red for emphasis */
+  }
+  
+  .App.light .dropdown,
+  .App.light .theme-button.light {
+    border-color: #3498DB; /* Light Mode Border */
+    background-color: #F0F4FF; /* Light blue */
+    color: #2C3E50; /* Dark Blue-Grey */
+  }
+  
+  /* Dark Mode */
+  .App.dark {
+    background-color: #121212; /* Dark Black */
+    color: #F5F5F5; /* Soft Off-White */
+  }
+  
+  .App.dark p {
+    color: #E74C3C; /* Red for emphasis */
+  }
+  
+  .App.dark .dropdown,
+  .App.dark .theme-button.dark {
+    border-color: #E74C3C; /* Dark Mode Border */
+    background-color: #1C2833; /* Dark navy */
+    color: #F2F3F4; /* Soft white */
+  }
+  
+  /* Neon Mode */
+  .App.neon {
+    background-color: #1A1A1A; /* Very Dark Grey */
+    color: #F0E68C; /* Neon Yellow */
+  }
+  
+  .App.neon p {
+    color: #FF69B4; /* Neon Pink */
+  }
+  
+  .App.neon .dropdown,
+  .App.neon .theme-button.neon {
+    border-color: #1ABC9C; /* Neon Mode Border */
+    background-color: #0B0C10; /* Blackish-blue */
+    color: #F7D358; /* Bright yellow */
+  }
+  
